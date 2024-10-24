@@ -19,6 +19,9 @@ jobs:
         tools: composer
         coverage: none
 
+    - name: Set Collision version
+      run: composer config version "8.x-dev"
+
     - name: Install Dependencies
       run: composer update --no-interaction --prefer-dist --no-progress --ansi
 
