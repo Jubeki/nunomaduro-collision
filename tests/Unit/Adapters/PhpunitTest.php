@@ -11,13 +11,6 @@ use Symfony\Component\Process\Process;
 
 class PhpunitTest extends TestCase
 {
-    public function setUp(): void
-    {
-        if (PHP_VERSION_ID >= 80400) {
-            $this->markTestSkipped('Test skipped on PHP 8.4');
-        }
-    }
-
     #[Test]
     public function itIsAPrinter(): void
     {
